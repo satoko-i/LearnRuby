@@ -15,7 +15,7 @@ puts result_final
 
 
 def convert_to_abc(num)
-    amari = num % 5
+    amari = num % 10
     if(amari == 0)
         return "a"
     elsif(amari == 1)
@@ -31,3 +31,8 @@ puts convert_to_abc(3)
 puts convert_to_abc(4)
 puts convert_to_abc(5)
 puts convert_to_abc(6)
+puts convert_to_abc(7)
+puts convert_to_abc(8)
+puts convert_to_abc(9)
+puts convert_to_abc(10)
+puts convert_to_abc(11)
