@@ -8,4 +8,4 @@ params: {
 
 })
 
-puts JSON.parse(response)
+puts JSON.pretty_generate(JSON.parse(response))
