@@ -2,6 +2,10 @@
 require "http"
 require "json"
 
-response = HTTP.post("https://slack.com/api/api.test")
+response = HTTP.post("https://slack.com/api/auth.test",
+params: {
+    token: ENV["SLACK_TOKEN"]
 
-puts response
+})
+
+puts JSON.parse(response)
